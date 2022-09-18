@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: sampleapp 
+  name: samplewebappp 
 spec:
   replicas: #replicaNo#
   selector:
     matchLabels:
-      app: sampleapp
+      app: samplewebappp
   template:
     metadata:
       labels:
-        app: sampleapp 
+        app: samplewebappp
     spec:
       containers:
         - name: sampleapp 
-          image: rishikaregistry.azurecr.io/sampleapp
+          image: rishikaregistry.azurecr.io/samplewebappp
           ports:
           - containerPort: 80
